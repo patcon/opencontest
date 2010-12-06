@@ -3,7 +3,7 @@
 core = 6.x
 api = 2
 
-: THEMES
+; THEMES
 projects[tao][version] = 3.2
 projects[rubik][version] = 3.0-beta2
 projects[fusion][version] = 1.0
@@ -24,6 +24,8 @@ projects[strongarm][version] = 2.0
 
 libraries[profiler][download][type] = get
 libraries[profiler][download][url] = http://ftp.drupal.org/files/projects/profiler-6.x-2.0-beta1.tar.gz
+// Triggers cache flush so that features rebuilds and user roles are added.
+libraries[profiler][patch][] = http://drupal.org/files/issues/954996-profiler-trigger-faux-exportables-5.patch
 
 projects[fusion][version] = 1.0
 
