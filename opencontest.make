@@ -48,6 +48,9 @@ projects[token][version] = 1.15
 projects[views][subdir] = contrib
 projects[views][version] = 2.11
 
+projects[views_bulk_operations][subdir] = contrib
+projects[views_bulk_operations][version] = 1.10
+
 ; FEATURES
 projects[opencontest_features][type] = module
 projects[opencontest_features][download][type] = git
