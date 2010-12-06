@@ -1,0 +1,53 @@
+; $Id$
+
+name = Open Contest
+description = A contest-hosting distribution.
+core = 6.x
+theme = fusion
+
+; DEPENDENCIES
+
+;Core, required
+dependencies[] = block
+dependencies[] = filter
+dependencies[] = node
+dependencies[] = system
+dependencies[] = user
+
+; Core, optional
+dependencies[] = dblog
+dependencies[] = help
+dependencies[] = menu
+dependencies[] = path
+dependencies[] = php
+dependencies[] = update
+
+; USERS
+
+users[webadmin][uid] = 1
+users[webadmin][name] = webadmin
+users[webadmin][mail] = YOUR.EMAIL@example.com
+users[webadmin][status] = 1
+
+users[test.admin][uid] = 2
+users[test.admin][name] = test.administrator
+users[test.admin][mail] = test.admin@example.com
+users[test.admin][roles] = administrator
+users[test.admin][status] = 1
+
+users[test.coordinator][uid] = 3
+users[test.coordinator][name] = test.coordinator
+users[test.coordinator][mail] = test.coordinator@example.com
+users[test.coordinator][roles] = coordinator
+users[test.coordinator][status] = 1
+
+users[test.participant][uid] = 4
+users[test.participant][name] = test.participant
+users[test.participant][mail] = test.participant@example.com
+users[test.participant][roles] = participant
+users[test.participant][status] = 1
+
+; VARIABLES
+
+variables[site_name] = Open Contest
+variables[site_email] = biology.competition@utoronto.ca
