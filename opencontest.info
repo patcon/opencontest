@@ -26,6 +26,7 @@ dependencies[] = update
 dependencies[] = admin
 dependencies[] = strongarm
 dependencies[] = features
+dependencies[] = admin_views
 
 ; Features, OpenContest
 dependencies[] = feature_opencontest
