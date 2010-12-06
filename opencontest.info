@@ -3,7 +3,7 @@
 name = Open Contest
 description = A contest-hosting distribution.
 core = 6.x
-theme = fusion
+theme = magazeen
 
 ; DEPENDENCIES
 
@@ -21,6 +21,14 @@ dependencies[] = menu
 dependencies[] = path
 dependencies[] = php
 dependencies[] = update
+
+; Contrib
+dependencies[] = admin
+dependencies[] = strongarm
+dependencies[] = features
+
+; Features, OpenContest
+dependencies[] = feature_opencontest
 
 ; USERS
 
@@ -50,4 +58,7 @@ users[test.participant][status] = 1
 ; VARIABLES
 
 variables[site_name] = Open Contest
-variables[site_email] = biology.competition@utoronto.ca
+variables[site_email] = YOUR.EMAIL@example.com
+
+variables[admin_theme] = rubik
+variables[node_admin_theme] = 1

@@ -1,0 +1,10 @@
+; $Id$
+
+core = 6.x
+api = 2
+
+projects[drupal][version] = 6.19
+
+projects[opencontest][type] = profile
+projects[opencontest][download][type] = git
+projects[opencontest][download][url] = git://github.com/patcon/opencontest.git
