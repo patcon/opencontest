@@ -1,0 +1,12 @@
+<?php
+// $Id$
+
+/**
+  * Implementation of hook_install().
+  */
+function opencontest_install() {
+  // Automatic user creation and aliases behave oddly with path_redirect, so regenerate.
+  db_query('DELETE FROM {url_alias}');
+  _pathauto_include();
+  user_pathauto_bulkupdate();
+}
